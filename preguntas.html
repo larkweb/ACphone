@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+  integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+/>
+  <title>Preguntas | ACphone</title>
+</head>
+<body>
+  <header class="main-header">
+    <div class="content-wrapper">
+      <a href="/">
+        <img src="images/logo 1.svg" alt="">
+      </a>
+      <span id="open-menu-button" class="jam jam-menu"></span>
+      <nav id="main-menu" class="main-menu">
+        <span id="close-menu-button" class="jam jam-close"></span>
+        <ul>
+          <li>
+            <a href="/">Inicio</a>
+          </li>
+          <li>
+            <a href="quienes-somos.html">¿Quiénes somos?</a>
+          </li>
+          <li>
+            <a href="productos.html">Productos</a>
+          </li>
+          <li>
+          <li>
+            <a href="servicios.html">Servicios</a>
+          </li>
+          <a href="testimonios.html">Testimonios</a>
+          </li>
+
+          <li>
+            <a href="preguntas.html">Preguntas</a>
+          </li>
+          <li>
+            <a href="terminos.html">Terminos</a>
+          </li>
+          <li>
+            <a href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrapper">
+      <p>El Comienzo de una Nueva Experiencia con Apple</p>
+      <h1>Preguntas Frecuentes</h1>
+  
+      <div class="faq">
+        <button class="accordion">
+          ¿Qué es ACphone?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            ACphone es una empresa especializada en la venta y reparación de productos Apple. Nos enorgullece ofrecer soluciones de alta calidad para sus dispositivos y proporcionar servicios excepcionales a nuestros clientes.
+          </p>
+        </div>
+      </div>
+  
+      <div class="faq">
+        <button class="accordion">
+          ¿Cómo funcionan los servicios de ACphone?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            En ACphone, nos esforzamos por ofrecer un servicio integral para sus productos Apple. Nuestro equipo de expertos puede ayudarle con la compra de dispositivos Apple y ofrecer soluciones de reparación confiables utilizando métodos de última generación. ¡Estamos aquí para cuidar de sus dispositivos!
+          </p>
+        </div>
+      </div>
+  
+      <div class="faq">
+        <button class="accordion">
+          ¿Cuáles son los desafíos principales en la industria de tecnología?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            La industria de tecnología se enfrenta a desafíos constantes, incluyendo la innovación rápida, la seguridad de datos y la demanda de dispositivos confiables. ACphone se dedica a abordar estos desafíos proporcionando productos y servicios de alta calidad.
+          </p>
+        </div>
+      </div>
+  
+      <div class="faq">
+        <button class="accordion">
+          ¿Cómo ACphone enfrenta estos desafíos?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            ACphone se compromete a mantenerse actualizado con las últimas tendencias tecnológicas y está en constante evolución para ofrecer soluciones innovadoras. Nuestra dedicación a la calidad y la seguridad nos permite enfrentar estos desafíos de manera efectiva.
+          </p>
+        </div>
+      </div>
+  
+      <div class="faq">
+        <button class="accordion">
+          ¿Cómo puedo ser parte de la comunidad ACphone?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            ¡Es fácil unirse a la comunidad ACphone! Puede comprar productos Apple de alta calidad a través de nuestra tienda en línea y utilizar nuestros servicios de reparación confiables. ¡Estamos aquí para servirle y responder a todas sus necesidades relacionadas con Apple!
+          </p>
+        </div>
+      </div>
+  
+      <div class="faq">
+        <button class="accordion">
+          ¿Cómo funcionan las garantías de productos en ACphone?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            En ACphone, ofrecemos garantías en todos nuestros productos. La duración de la garantía puede variar según el producto. Nuestro equipo de soporte está disponible para proporcionar detalles específicos y ayudarle en caso de problemas con su producto.
+          </p>
+        </div>
+      </div>
+    </div>
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          this.parentElement.classList.toggle("active");
+
+          var pannel = this.nextElementSibling;
+
+          if (pannel.style.display === "block") {
+            pannel.style.display = "none";
+          } else {
+            pannel.style.display = "block";
+          }
+        });
+      }
+    </script>
+    
+   
+  </main>
+  <footer class="main-footer">
+    <p>Todos los derechos reservados © 2023 | ACphone</p>
+  </footer>
+
+  <script src="scripts/menu.js"></script>
+</body>
+</html>
